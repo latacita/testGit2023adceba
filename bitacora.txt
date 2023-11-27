@@ -16,7 +16,15 @@
 07	git branch develop
 08	git branch feature/Ticket220
 	git checkout feature/Ticket220
+10	git add bitacora.txt
+	git commit -m "Paso 10"
+11	git checkout develop
+12	git branch feature/Ticket221
+	git checkout feature/Ticket221
 14	git stash
+16	git add bitacora.txt
+	git commit -m "Paso 16"
+17	git checkout feature/Ticket221
 18	git stash apply
 	atom bitacora.txt
 19	git add bitacora.txt
@@ -25,5 +33,15 @@
 21	git branch feature/Ticket222
 22	git checkout feature/Ticket220	La fusión de la rama feature/Ticket220
 					se haría de manera recursiva
+24	git add bitacora.txt
+	git commit -m "Paso 24"
+25	git checkout develop
+26	git merge --no-ff feature/Ticket220
+27	git merge --no-ff feature/Ticket221
+
+
+
+
+
 
 
