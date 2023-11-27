@@ -11,3 +11,45 @@
 03	git add bitacora.txt
 	git commit -m "Paso 03"
 04	git push
+06	git add bitacora.txt
+	git commit -m "Paso 06"
+07	git branch develop
+08	git branch feature/Ticket220
+	git checkout feature/Ticket220
+10	git add bitacora.txt
+	git commit -m "Paso 10"
+11	git checkout develop
+12	git branch feature/Ticket221
+	git checkout feature/Ticket221
+14	git stash
+16	git add bitacora.txt
+	git commit -m "Paso 16"
+17	git checkout feature/Ticket221
+18	git stash apply
+	atom bitacora.txt
+19	git add bitacora.txt
+	git commit -m "Paso 19"
+20	git checkout develop
+21	git branch feature/Ticket222
+22	git checkout feature/Ticket220	La fusión de la rama feature/Ticket220
+					se haría de manera recursiva
+24	git add bitacora.txt
+	git commit -m "Paso 24"
+25	git checkout develop
+26	git merge --no-ff feature/Ticket220
+27	git merge --no-ff feature/Ticket221
+29	git add bitacora.txt
+	git commit -m "Paso 29"
+30	git tag Step29
+31	git push --set-upstream origin develop
+32	git checkout feature/Ticket222
+33	git merge develop		No he sabido recuperar sólo el fichero bitacora.txt
+
+
+
+
+
+
+
+
+
